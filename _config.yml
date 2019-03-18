@@ -1,0 +1,27 @@
+# Site settings
+title: Onur Solmaz
+# email:
+description: "Writings on math and crypto"
+# baseurl: "//hos.github.io"
+# url: "//hos.github.io"
+url: "https://osolmaz.com"
+baseurl: ""
+github_username:  osolmaz
+twitter_username: "h4x0rroyale"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+
+# configure kramdown
+kramdown:
+  parse_block_html: true
+
+title_image: "https://osolmaz.com/img/favicon.svg"
+
+excerpt_separator: <!--more-->

@@ -1,0 +1,29 @@
+<div class="sidebar noprint">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>{{ site.title }}</h1>
+      <!-- <p class="lead">{{ site.description }}</p> -->
+    </div>
+    <div class="sidebar-social">
+      <ul class="social">
+        <li><a href="https://github.com/osolmaz" class="icons fa fa-github-square" target="_blank"></a><br></li>
+        <li><a href="https://stackoverflow.com/users/1350116/osolmaz" class="icons fa fa-stack-overflow" target="_blank"></a><br></li>
+        <li><a href="https://linkedin.com/in/osolmaz" class="icons fa fa-linkedin-square" target="_blank"></a><br></li>
+        <li><a href="https://twitter.com/h4x0rroyale" class="icons fa fa-twitter" target="_blank"></a><br></li>
+        <li><a href="https://www.kaggle.com/osolmaz" class="icons fab fa-kaggle" target="_blank"></a><br></li>
+        <li><a href="https://angel.co/osolmaz" class="icons fa fa-angellist" target="_blank"></a><br></li>
+        <li><a href="https://medium.com/@osolmaz" class="icons fa fa-medium" target="_blank"></a><br></li>
+      </ul>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="{{ '/' | absolute_url }}">Home</a>
+      <a class="sidebar-nav-item" href="{{ '/cv/' | absolute_url }}" target="_blank">Résumé</a>
+      <a class="sidebar-nav-item" href="{{ '/projects/' | absolute_url }}">Projects</a>
+      <a class="sidebar-nav-item" href="{{ '/tag/crypto/' | absolute_url }}">Crypto</a>
+      <a class="sidebar-nav-item" href="{{ '/tag/math/' | absolute_url }}">Math</a>
+      <a class="sidebar-nav-item" href="{{ '/blog/' | absolute_url }}">Blog</a>
+      <a class="sidebar-nav-item" href="mailto:onursolmaz@gmail.com">Contact Me</a>
+    </nav>
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
+</div>

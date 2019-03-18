@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="post">
+<h1>Tag: {{ page.tag }}</h1>
+
+<p>
+  This page lists blog posts about the topic: <code>{{ page.tag }}</code>. To see all posts,
+  visit the <a href="{{ '/blog/' | absolute_url }}">main page</a>.
+</p>
+
+<ul class="posts">
+{% for post in site.tags[page.tag] %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+</div>
